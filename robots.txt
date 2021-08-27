@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://overchute.github.io/docs/sitemap.xml.gz
+Sitemap: https://docs.overchute.com/sitemap.xml.gz
