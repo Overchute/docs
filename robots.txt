@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fermartz.github.io/docs-over/sitemap.xml.gz
+Sitemap: https://overchute.github.io/docs/sitemap.xml.gz
