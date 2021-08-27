@@ -1,6 +1,6 @@
 input: ./
 output: .retype
-url: overchute.github.io/docs/
+url: docs.overchute.com
 meta:
   title: " | Documentation"
 branding:
