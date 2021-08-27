@@ -1,5 +1,7 @@
 # Basic Details
 
+---
+
 - Lead applicant name: Artur Khaialiev
 - Email address: khayalievartur@gmail.com
 - Project name: Overchute
