@@ -1,0 +1,15 @@
+input: ./
+output: .retype
+url: fermartz.github.io/docs-over/
+meta:
+  title: " | Documentation"
+branding:
+  # title: Overchute
+  label: Docs
+  logo: /static/logo_full.svg
+favicon: /static/favicon-32x32.png
+# links:
+#   - text: Getting Started
+#     link: https://retype.com/guides/getting-started/
+footer:
+  copyright: "&copy; Copyright {{ year }}. All rights reserved."
