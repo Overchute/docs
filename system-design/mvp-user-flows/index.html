@@ -25,10 +25,10 @@
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="/static/favicon-32x32.png" rel="icon" />
-    <link href="/resources/css/retype.css?v=1.8.2.683420864133" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/resources/css/retype.css?v=1.9.683734064819" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.683420864133" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/resources/js/retype.js?v=1.8.2" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.9.683734064819" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.9" defer data-turbo-track="reload"></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -237,7 +237,7 @@
 <ul>
 <li>Offer price (in cycles token XTC) (must be &gt;=0)</li>
 <li>End date (must be in the future)</li>
-<li>XTC wallet address into which raised funds must be paid</li>
+<li>Creator&#x27;s PrincipalID to which raised funds must be paid (as XTC)</li>
 <li>Reads a description of the crowdsale rules and clicks &quot;Confirm&quot; button</li>
 </ul>
         </div>
@@ -310,7 +310,7 @@
 <li>Offer status (open/failed/fulfilled)</li>
 <li>End date</li>
 <li>Crowdsale rules</li>
-<li>XTC wallet address for contributions, for Contributor to copy.</li>
+<li>Crowdsale PrincipalID for XTC contributions, for Contributor to copy.</li>
 </ul>
         </div>
     </div>
@@ -328,7 +328,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3">
-<p>Contributor sets up an XTC wallet and makes a payment to the copied crowdsale wallet address.</p>
+<p>Contributor creates a PrincipalID, funds it with XTC, and makes a payment to the copied crowdsale PrincipalID.</p>
         </div>
     </div>
 </div>
@@ -349,16 +349,16 @@
 <li>If total contributions are less than the offer price:
 <ul>
 <li>Set crowdsale status to &quot;failed&quot;.</li>
-<li>Refund all contributions to the wallet addresses from which they came.</li>
+<li>Refund all contributions to the PrincipalIDs from which they came.</li>
 </ul>
 </li>
 <li>If total contributions are greater than or equal to the offer price:
 <ul>
 <li>Set crowdsale status to &quot;fulfilled&quot;.</li>
-<li>Pay offer price to the wallet address specified by the Creator.</li>
-<li>Calculate the Platform&#x27;s share of the overshoot, and pay it to the platform&#x27;s wallet address.</li>
-<li>Calculate the Creator&#x27;s share of the overshoot and pay it to the wallet address specified by the Creator.</li>
-<li>Calculate the total Contributors&#x27; share of the overshoot, and the portion due to each Contributor, and pay each to the wallet address from which the contribution came.</li>
+<li>Pay offer price to the Creator&#x27;s PrincipalID.</li>
+<li>Calculate the Platform&#x27;s share of the overshoot, and pay it to the platform&#x27;s PrincipalID.</li>
+<li>Calculate the Creator&#x27;s share of the overshoot and pay it to the Creator&#x27;s PrincipalID.</li>
+<li>Calculate the total Contributors&#x27; share of the overshoot, and the portion due to each Contributor, and pay each to the PrincipalID from which the contribution came.</li>
 </ul>
 </li>
 </ul>
@@ -415,7 +415,7 @@
 <ul>
 <li>User accounts or authentication are not required for any participants: Creator, Contributors or IP Users. (Future features will require the creation of a user account for each Creator.)
 When a Creator creates a crowdsale, it is open for contributions immediately, and cannot be modified.</li>
-<li>It must not be possible for a Contributor to see what other contributions have been made by looking at other payments to the same wallet address on the public transaction ledger.</li>
+<li>It must not be possible for a Contributor to see what other contributions have been made by looking at other payments to the same crowdsale PrincipalID on a public transaction ledger.</li>
 </ul>
         </div>
     </div>
