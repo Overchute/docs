@@ -18,7 +18,7 @@ Creator navigates to Overchute website and clicks the"Create new crowdsale" butt
 
 - Offer price (in cycles token XTC) (must be >=0)
 - End date (must be in the future)
-- XTC wallet address into which raised funds must be paid
+- Creator's PrincipalID to which raised funds must be paid (as XTC)
 - Reads a description of the crowdsale rules and clicks "Confirm" button
   !!!
 
@@ -39,24 +39,24 @@ Creator communicates the crowdsale to the community, pointing them to the IP pro
 - Offer status (open/failed/fulfilled)
 - End date
 - Crowdsale rules
-- XTC wallet address for contributions, for Contributor to copy.
+- Crowdsale PrincipalID for XTC contributions, for Contributor to copy.
   !!!
 
 !!!secondary
-Contributor sets up an XTC wallet and makes a payment to the copied crowdsale wallet address.
+Contributor creates a PrincipalID, funds it with XTC, and makes a payment to the copied crowdsale PrincipalID.
 !!!
 
 !!!success On the crowdsale end date, Overchute calculates total contributions, and does the following:
 
 - If total contributions are less than the offer price:
   - Set crowdsale status to "failed".
-  - Refund all contributions to the wallet addresses from which they came.
+  - Refund all contributions to the PrincipalIDs from which they came.
 - If total contributions are greater than or equal to the offer price:
   - Set crowdsale status to "fulfilled".
-  - Pay offer price to the wallet address specified by the Creator.
-  - Calculate the Platform's share of the overshoot, and pay it to the platform's wallet address.
-  - Calculate the Creator's share of the overshoot and pay it to the wallet address specified by the Creator.
-  - Calculate the total Contributors' share of the overshoot, and the portion due to each Contributor, and pay each to the wallet address from which the contribution came.
+  - Pay offer price to the Creator's PrincipalID.
+  - Calculate the Platform's share of the overshoot, and pay it to the platform's PrincipalID.
+  - Calculate the Creator's share of the overshoot and pay it to the Creator's PrincipalID.
+  - Calculate the total Contributors' share of the overshoot, and the portion due to each Contributor, and pay each to the PrincipalID from which the contribution came.
 
 !!!
 
@@ -72,5 +72,5 @@ IP User navigates to the crowdsale URL in the open licence. The app displays the
 
 - User accounts or authentication are not required for any participants: Creator, Contributors or IP Users. (Future features will require the creation of a user account for each Creator.)
   When a Creator creates a crowdsale, it is open for contributions immediately, and cannot be modified.
-- It must not be possible for a Contributor to see what other contributions have been made by looking at other payments to the same wallet address on the public transaction ledger.
+- It must not be possible for a Contributor to see what other contributions have been made by looking at other payments to the same crowdsale PrincipalID on a public transaction ledger.
   !!!
