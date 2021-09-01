@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="turbo-root" content="/docs-over">
     <meta name="turbo-cache-control" content="no-cache">
 
     <!-- Primary Meta Tags -->
@@ -13,23 +12,23 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://fermartz.github.io/docs-over/system-design/mvp-user-flows/">
+    <meta property="og:url" content="https://docs.overchute.com/system-design/mvp-user-flows/">
     <meta property="og:title" content="MVP User Flows | Documentation">
     <meta property="og:description" content="Off-dapp actions are shown in light gray. On-dapp actions are shown in green.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://fermartz.github.io/docs-over/system-design/mvp-user-flows/">
+    <meta property="twitter:url" content="https://docs.overchute.com/system-design/mvp-user-flows/">
     <meta property="twitter:title" content="MVP User Flows | Documentation">
     <meta property="twitter:description" content="Off-dapp actions are shown in light gray. On-dapp actions are shown in green.">
     
-    <script>(function () { var el = document.documentElement, m = localStorage.getItem("/docs-over/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+    <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="/docs-over/static/favicon-32x32.png" rel="icon" />
-    <link href="/docs-over/resources/css/retype.css?v=1.8.2.683406908519" rel="stylesheet" data-turbo-track="reload" />
+    <link href="/static/favicon-32x32.png" rel="icon" />
+    <link href="/resources/css/retype.css?v=1.8.2.683816297970" rel="stylesheet" data-turbo-track="reload" />
 
-    <script type="text/javascript" src="/docs-over/resources/js/config.js?v=1.8.2.683406908519" defer data-turbo-track="reload"></script>
-    <script type="text/javascript" src="/docs-over/resources/js/retype.js?v=1.8.2" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/config.js?v=1.8.2.683816297970" defer data-turbo-track="reload"></script>
+    <script type="text/javascript" src="/resources/js/retype.js?v=1.8.2" defer data-turbo-track="reload"></script>
 </head>
     <body>
         <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -44,10 +43,10 @@
         <!-- Logo -->
         <div class="flex items-center justify-between h-full py-2 md:w-75">
             <div class="flex items-center px-2 md:px-6">
-                <a id="docs-site-logo" href="/docs-over/" class="flex items-center leading-snug text-2xl">
+                <a id="docs-site-logo" href="/" class="flex items-center leading-snug text-2xl">
                     <span class="flex-grow-0 flex-shrink-0 overflow-hidden">
-                        <img class="max-h-10 dark:hidden md:inline-block" src="/docs-over/static/logo_full.svg">
-                        <img class="max-h-10 hidden dark:inline-block" src="/docs-over/static/logo_full.svg">
+                        <img class="max-h-10 dark:hidden md:inline-block" src="/static/logo_full.svg">
+                        <img class="max-h-10 hidden dark:inline-block" src="/static/logo_full.svg">
                     </span>
                 </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
             </div>
@@ -238,7 +237,7 @@
 <ul>
 <li>Offer price (in cycles token XTC) (must be &gt;=0)</li>
 <li>End date (must be in the future)</li>
-<li>XTC wallet address into which raised funds must be paid</li>
+<li>Creator&#x27;s PrincipalID to which raised funds must be paid (as XTC)</li>
 <li>Reads a description of the crowdsale rules and clicks &quot;Confirm&quot; button</li>
 </ul>
         </div>
@@ -311,7 +310,7 @@
 <li>Offer status (open/failed/fulfilled)</li>
 <li>End date</li>
 <li>Crowdsale rules</li>
-<li>XTC wallet address for contributions, for Contributor to copy.</li>
+<li>Crowdsale PrincipalID for XTC contributions, for Contributor to copy.</li>
 </ul>
         </div>
     </div>
@@ -329,7 +328,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3">
-<p>Contributor sets up an XTC wallet and makes a payment to the copied crowdsale wallet address.</p>
+<p>Contributor creates a PrincipalID, funds it with XTC, and makes a payment to the copied crowdsale PrincipalID.</p>
         </div>
     </div>
 </div>
@@ -350,16 +349,16 @@
 <li>If total contributions are less than the offer price:
 <ul>
 <li>Set crowdsale status to &quot;failed&quot;.</li>
-<li>Refund all contributions to the wallet addresses from which they came.</li>
+<li>Refund all contributions to the PrincipalIDs from which they came.</li>
 </ul>
 </li>
 <li>If total contributions are greater than or equal to the offer price:
 <ul>
 <li>Set crowdsale status to &quot;fulfilled&quot;.</li>
-<li>Pay offer price to the wallet address specified by the Creator.</li>
-<li>Calculate the Platform&#x27;s share of the overshoot, and pay it to the platform&#x27;s wallet address.</li>
-<li>Calculate the Creator&#x27;s share of the overshoot and pay it to the wallet address specified by the Creator.</li>
-<li>Calculate the total Contributors&#x27; share of the overshoot, and the portion due to each Contributor, and pay each to the wallet address from which the contribution came.</li>
+<li>Pay offer price to the Creator&#x27;s PrincipalID.</li>
+<li>Calculate the Platform&#x27;s share of the overshoot, and pay it to the platform&#x27;s PrincipalID.</li>
+<li>Calculate the Creator&#x27;s share of the overshoot and pay it to the Creator&#x27;s PrincipalID.</li>
+<li>Calculate the total Contributors&#x27; share of the overshoot, and the portion due to each Contributor, and pay each to the PrincipalID from which the contribution came.</li>
 </ul>
 </li>
 </ul>
@@ -416,7 +415,7 @@
 <ul>
 <li>User accounts or authentication are not required for any participants: Creator, Contributors or IP Users. (Future features will require the creation of a user account for each Creator.)
 When a Creator creates a crowdsale, it is open for contributions immediately, and cannot be modified.</li>
-<li>It must not be possible for a Contributor to see what other contributions have been made by looking at other payments to the same wallet address on the public transaction ledger.</li>
+<li>It must not be possible for a Contributor to see what other contributions have been made by looking at other payments to the same crowdsale PrincipalID on a public transaction ledger.</li>
 </ul>
         </div>
     </div>
@@ -432,17 +431,17 @@ When a Creator creates a crowdsale, it is open for contributions immediately, an
             
 <nav class="flex mt-14">
     <div class="w-1/2">
-        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/docs-over/grant-application/grant-details/">
+        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/development/getting-started/">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
             <span>
                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                <span class="block mt-1">Grant Details</span>
+                <span class="block mt-1">Getting Started</span>
             </span>
         </a>
     </div>
 
     <div class="w-1/2">
-        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/docs-over/system-design/protocol-specification/">
+        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/system-design/protocol-specification/">
             <span>
                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
                 <span class="block mt-1">Protocol Specification</span>
