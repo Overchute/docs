@@ -14,9 +14,9 @@ _Mobilize your collective buying power_
 - Only pay if others do too
 
 ### How it works
-1. __Offer__: A creator releases a digital product under a standard open-source or creative-commons licence, but with a suspensive condition, so it only comes into force upon the success of a crowdsale, with a specified offer price.
-2. __Contribute__: People and organisations who want the product make contributions to the crowdsale but here's the twist: the accumulating contributions are not revealed. This is the _Blind Crowdsale Protocol_.
-3. __Distribute__: At the end of the crowdsale period, if the contributed total falls short of the offer price, all contributions are refunded - _no deal_. But if the contributed total exceeds the offer price, the product is released under the open licence. The offer price is paid to the creator and the excess contributions (_overshoot_) are shared equally between the creator and contributors, after a platform fee.
+- __Step 1: Offer__ - A creator releases a digital product under a standard open-source or creative-commons licence, but with a suspensive condition, so it only comes into force upon the success of a crowdsale, with a specified offer price.
+- __Step 2: Contribute__ - People and organisations who want the product make contributions to the crowdsale but here's the twist: the accumulating contributions are not revealed. This is the _Blind Crowdsale Protocol_.
+- __Step 3: Distribute__ - At the end of the crowdsale period, if the contributed total falls short of the offer price, all contributions are refunded - _no deal_. But if the contributed total exceeds the offer price, the product is released under the open licence. The offer price is paid to the creator and the excess contributions (_overshoot_) are shared equally between the creator and contributors, after a platform fee.
 
 ### Why it works
 - __What's it worth to me?__ Projects providing Public Goods usually suffer from the free-rider problem, where people hold back hoping others will contribute enough. But with the Blind Crowdsale Protocol, you can't see how much others are contributing, so you can't free-ride without risking failure of the crowdsale. If you really want what's on offer, you have to contribute in line with the value it will add in your work and life.
