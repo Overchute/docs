@@ -5,7 +5,7 @@ _A decentralized smart-contract application for crowdfunding the release of inte
 ### For creators
 _Build for the world to use_
 - Monetize your work without having to enforce restricive licences
-- Get rewarded for enriching the commons
+- Get rewarded for producing public goods
 
 ### For communities
 _Mobilize your collective buying power_
