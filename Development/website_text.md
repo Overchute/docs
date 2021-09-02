@@ -15,7 +15,7 @@ _Mobilize your collective buying power_
 
 ### How it works
 1. A creator releases a digital product under a standard open-source or creative-commons licence, but with a suspensive condition, so it only comes into force upon the success of a crowdsale, with a specified offer price.
-2. People and organisations who want the product make contributions to the crowdsale but here's the twist: the accumulating contributions are not revealed. This is the _Blind Crowsale Protocol_.
+2. People and organisations who want the product make contributions to the crowdsale but here's the twist: the accumulating contributions are not revealed. This is the _Blind Crowdsale Protocol_.
 3. At the end of the crowdsale period, if the contributed total falls short of the offer price, all contributions are refunded - no deal. But if the contributed total exceeds the offer price, the product is released under the open licence. The offer price is paid to the creator and the excess contributions (overshoot) are shared equally between the creator and contributors, after a platform fee.
 
 ### Why it works
