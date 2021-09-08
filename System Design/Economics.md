@@ -43,14 +43,15 @@ Note: Assuming the SNS functions like the NNS, voting power will depend on staki
 
 ### Initial token distribution
 
-| Token-holder group | Initial allocation | Comment |
+| Group | Allocation | Comment |
 | ------ | ------ | ------ | 
-| Founders | 49% | Decentralized from the start |
-| Endowment | 20% | Can be gradually sold to fund development and operations until the dApp is sustainably profitable |
-| Investors | 0% | Asssuming we get the Dfinity Foundation Developer Grant, we can fund our hours and pay sundry expenses without raising capital |
-| Partners | 20% | Organisations like Creative Commons and Open Source Initiative, or providers of features like Credit Card integration |
-| Airdrop recipients | 10% | We can use this to build a community and kickstart awareness and adoption |
-| Creators | 0% | This will grow as tokens are purchased from existing holder to reward creators |
+| Founders | 49% | Decentralized from the start. |
+| Endowment | 20% | Can be gradually sold to fund development and operations until the dApp is sustainably profitable. |
+| Partners | 20% | Organisations like Creative Commons and Open Source Initiative, or providers of features like Credit Card integration. |
+| VCs | 0% | Asssuming we get the Dfinity Foundation Developer Grant, we can fund our hours and pay sundry expenses without raising venture capita.l |
+| IPO investors | 0% | I propose no IPO, to avoid legal complications. Just direct listing on exchanges, so anyone can buy if they want to. |
+| Airdrop recipients | 10% | We can use this to build a community and kickstart awareness and adoption. |
+| Creators | 0% | This will grow as tokens are purchased from existing holders to reward creators. |
 
 
 ### Token-holder options
