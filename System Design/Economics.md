@@ -25,9 +25,9 @@ Because of the absence of a strong natural moat, Overchute will only be able to 
     - Method 1 (_not preferred_): Transferring XTC profits to the accounts of token-holders as dividends.
     - Method 2 (_preferred_): Using XTC profits to buy back tokens on the open market and burn them. This distributes the value proportionally to token holders via deflation.
 - Token ownership also confers the right to a say in platform governance (when the SNS functionality becomes available), including:
-        - the direction of development of the dApp
-        - allocation of funds from the reserve to pay for development, maintenance, support and administration
-        - setting economic parameters, especially the platform fee
+    - the direction of development of the dApp
+    - allocation of funds from the reserve to pay for development, maintenance, support and administration
+    - setting economic parameters, especially the platform fee
 Note: Assuming the SNS functions like the NNS, voting power will depend on staking in neurons, with inflation-funded voting rewards.
 
 ### Token rewards
