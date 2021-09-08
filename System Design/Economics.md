@@ -43,15 +43,14 @@ Note: Assuming the SNS functions like the NNS, voting power will depend on staki
 
 ### Initial token distribution
 
-| Founders | 49% | |
+| Token-holder group | Initial allocation | Comment |
+| ------ | ------ | ------ | 
+| Founders | 49% |  |
 | Investors | 0% | Asssuming we get the Dfinity Foundation Developer Grant, we can fund our hours and pay sundry expenses without raising capital |
 | Partners | 20% | Organisations like Creative Commons and Open Source Initiative, or providers of features like Credit Card integration |
 | Overchute Foundation Endowment | 20% | Can be gradually sold to fund development and operations until the dApp is profitable, and then to promote |
 | Airdrop recipients | 10% | We can use this to build a community and kickstart awareness and adoption |
 | Creators | 0% | This will grow as tokens are purchased from existing holder to reward creators |
-
-| Token-holder group | Initial allocation | Comment |
-| ------ | ------ | ------ | 
 | Dropbox | [plugins/dropbox/README.md][PlDb] |  |
 | GitHub | [plugins/github/README.md][PlGh] |  |
 | Google Drive | [plugins/googledrive/README.md][PlGd] |  |
