@@ -28,6 +28,7 @@ Because of the absence of a strong natural moat, Overchute will only be able to 
     - the direction of development of the dApp
     - allocation of funds from the reserve to pay for development, maintenance, support and administration
     - setting economic parameters, especially the platform fee
+
 Note: Assuming the SNS functions like the NNS, voting power will depend on staking in neurons, with inflation-funded voting rewards.
 
 ### Token rewards
