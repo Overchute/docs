@@ -6,18 +6,21 @@
     <meta name="turbo-cache-control" content="no-cache">
 
     <!-- Primary Meta Tags -->
-    <title>Logo | Documentation</title>
-    <meta name="title" content="Logo | Documentation">
+    <title>Economics | Documentation</title>
+    <meta name="title" content="Economics | Documentation">
+    <meta name="description" content="Overchute economics" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://docs.overchute.com/branding/logo/">
-    <meta property="og:title" content="Logo | Documentation">
+    <meta property="og:url" content="https://docs.overchute.com/system-design/economics/">
+    <meta property="og:title" content="Economics | Documentation">
+    <meta property="og:description" content="Overchute economics">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://docs.overchute.com/branding/logo/">
-    <meta property="twitter:title" content="Logo | Documentation">
+    <meta property="twitter:url" content="https://docs.overchute.com/system-design/economics/">
+    <meta property="twitter:title" content="Economics | Documentation">
+    <meta property="twitter:description" content="Overchute economics">
     
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -161,12 +164,98 @@
                 <div id="docs-sidebar-right-toggle"></div>
                
                 <!-- Page content  -->
-<doc-anchor-target id="logo" class="break-words">
+<doc-anchor-target id="economics" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#logo">#</doc-anchor-trigger>
-        <span>Logo</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#economics">#</doc-anchor-trigger>
+        <span>Economics</span>
     </h1>
 </doc-anchor-target>
+<ul>
+<li>Overchute economics
+<ul>
+<li>Cash flow
+<ul>
+<li>Fixed costs (overheads): Development, maintenance, support, administration</li>
+<li>Variable costs (direct): Compute</li>
+<li>Revenue: A share of the overshoot of each successful sale. The size of this share is the key economic parameter in the system. It can be adjusted to maintain a reserve fund from which expenses are covered, and profits distributed.</li>
+</ul>
+</li>
+<li>Market dynamics
+<ul>
+<li>Overchute is an intermediary, or multi-sided platform. These platforms can profit from the value they add only if there is a competitive &#x27;moat&#x27; deriving from:
+<ul>
+<li><strong>Trust</strong>, where transactions are enabled because parties who don&#x27;t trust each other each trust the platform. For Overchute, track-record and brand-recognition can give some advantage, but this competitive moat is limited because of the tamperproof execution guarantees of the blockchain network. If a competitor starts up, users just need to inspect their open-source smart-contract code to be willing to switch.</li>
+<li><strong>Secret sauce</strong>, where the platform has some proprietary abilities that can&#x27;t easily be copied. For Overchute, the code needs to be open-source to be trusted, so anyone can fork it, and this moat doesn&#x27;t apply.</li>
+<li><strong>Network effects</strong>, where the increasing presence of others on the platform increases its utility in a re-inforcing cycle. For Overchute, the current design has all communication happening outside the dApp, so there&#x27;s no friction to switch to a competitor - just point to a different crowdsale URL.</li>
+</ul>
+</li>
+<li>Because of the absence of a strong natural moat, Overchute will only be able to make a sustained profit if its tokenomics give users a stake in the success of the platform.</li>
+</ul>
+</li>
+<li>Token design principles
+<ul>
+<li>The native token must not add friction for users, so it isn&#x27;t required for crowdsales, which use the XTC stablecoin.</li>
+<li>The value of the token should arise from the profitability of the platform, not from speculative ponzi/pyramid scheme dynamics.</li>
+<li>The primary goal of the native token is give users a stake in the success of the platform, aligning interests to incentivise continued and expanding use of the platform, and sustainable profit.</li>
+</ul>
+</li>
+<li>Token functionality
+<ul>
+<li>To begin with all tokens are owned by the founders.</li>
+<li>Tokens can be freely traded on exchanges.</li>
+<li>Token ownership confers the right to a share in the profit of the platform, which can be distributed by:
+<ul>
+<li>Method 1 (not preferred): Transferring XTC profits to the accounts of token-holders as dividends.</li>
+<li>Method 2 (preferred): Using XTC profits to buy back tokens on the open market and burn them. This distributes the value proportionally to token holders via deflation.</li>
+</ul>
+</li>
+<li>Token ownership also confers the right to a say in platform governance (when the SNS functionality becomes available), including:
+<ul>
+<li>the direction of development of the dApp</li>
+<li>allocation of funds from the reserve to pay for development, maintenance, support and administration</li>
+<li>setting economic parameters, especially the platform fee</li>
+<li>Note: Assuming the SNS functions like the NNS, voting power will depend on staking in neurons, with inflation-funded voting rewards.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Token rewards
+<ul>
+<li>Funding source: For successful crowdsales, 10% of the contributed amount goes to the platform (limited by the amount of overshoot available). This is quite a large amount, but it can&#x27;t be reduced because it acts as a barrier that prevents &#x27;shilling&#x27; by the creator, which is when the creator inflates the offer price while adding a corresponding contribution themselves, to gain an unfair share of the overshoot. So I propose we rename the &#x27;platform share&#x27; as the &#x27;reward share&#x27;, and use it to fund the tokenomics incentives, as follows:
+<ul>
+<li>The reward share on contributions up to 2X the offer price goes to the platform, for covering expenses and distributing profit to token holders.</li>
+<li>The reward share on contributions above 2X the offer price goes to the creator as a token incentive, as follows:
+<ul>
+<li>The funds are used to purchase tokens on the open market from existing token-holders.</li>
+<li>These purchased tokens are staked in a neuron with dissolve delay of 1 year and awarded to the creator.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Incentive effects:
+<ul>
+<li>Because the token reward only kicks in on contributions exceeding 2X the offer price, this design strengthens the incentive for creators to keep the offer price low.</li>
+<li>For the creator&#x27;s next crowdsale, they are likely to choose Overchute again, because they now have a stake in the profit of the platform. Subsequenct crowdsales may result in more token reward again, creating a re-inforcing cycle.</li>
+<li>It is not necessary to give a token reward to contributors (over and above their simple share of the overshoot) because they will contribute on whichever platform the creator sets up the crowdsale. It&#x27;s the creators who choose between Overchute and competitors.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Founder options:
+<ul>
+<li>Hold tokens for a sustained profit-share.</li>
+<li>Sell tokens on the open market, with price influenced by:
+<ul>
+<li>Fundamental value deriving from steady profits</li>
+<li>Forced buying for creator token rewards</li>
+<li>The value of a stake in governance</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
 
 
@@ -178,20 +267,20 @@
             
 <nav class="flex mt-14">
     <div class="w-1/2">
-        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/development/website_text/">
+        <a class="px-5 py-4 h-full flex items-center break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="/grant-application/grant-details/">
             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
             <span>
                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                <span class="block mt-1">Overchute</span>
+                <span class="block mt-1">Grant Details</span>
             </span>
         </a>
     </div>
 
     <div class="w-1/2">
-        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/branding/logo-download/">
+        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-all md:break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="/system-design/mvp-user-flows/">
             <span>
                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                <span class="block mt-1">Logo Download</span>
+                <span class="block mt-1">MVP User Flows</span>
             </span>
             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
         </a>
@@ -239,6 +328,6 @@
 
         <div id="docs-overlay-target"></div>
 
-        <script>window.__DOCS__ = { "title": "Logo", icon: "file", hasPrism: false, hasMermaid: false }</script>
+        <script>window.__DOCS__ = { "title": "Economics", icon: "file", hasPrism: false, hasMermaid: false }</script>
     </body>
 </html>
