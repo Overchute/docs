@@ -19,7 +19,6 @@ Because of the absence of a strong natural moat, Overchute will only be able to 
 - The primary goal of the native token is give users a stake in the success of the platform, aligning interests to incentivise continued and expanding use of the platform, and sustainable profit.
 
 ### Token functionality
-- To begin with all tokens are owned by the founders.
 - Tokens can be freely traded on exchanges.
 - Token ownership confers the right to a share in the profit of the platform, which can be distributed by:
     - Method 1 (_not preferred_): Transferring XTC profits to the accounts of token-holders as dividends.
@@ -42,7 +41,16 @@ Note: Assuming the SNS functions like the NNS, voting power will depend on staki
     - For the creator's next crowdsale, they are likely to choose Overchute again, because they now have a stake in the profit of the platform. Subsequenct crowdsales may result in more token reward again, creating a re-inforcing cycle.
     - It is not necessary to give a token reward to contributors (over and above their share of the overshoot) because they will contribute on whichever platform the creator sets up the crowdsale. It is the creators who choose between Overchute and competitors.
 
-### Founder options
+### Initial token distribution
+| Founders | 49% | |
+| Investors | 0% | Asssuming we get the Dfinity Foundation Developer Grant, we can fund our hours and pay sundry expenses without raising capital |
+| Partners | 20% | Organisations like Creative Commons and Open Source Initiative, or providers of features like Credit Card integration |
+| Overchute Foundation Endowment | 20% | Can be gradually sold to fund development and operations until the dApp is profitable, and then to promote |
+| Airdrop recipients | 10% | We can use this to build a community and kickstart awareness and adoption |
+| Creators | 0% | This will grow as tokens are purchased from existing holder to reward creators |
+
+
+### Token-holder options
 - Hold tokens for a sustained profit-share
 - Sell tokens on the open market, with price influenced by:
     - Fundamental value deriving from steady profits
